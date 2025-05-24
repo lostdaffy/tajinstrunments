@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+li {
+    list-style: none;
+}
