@@ -76,7 +76,7 @@ const AboutUs = () => {
               <div className="grid grid-cols-2 gap-6">
                 <div className="bg-white backdrop-blur-sm p-6 rounded-2xl border border-gray-200 shadow-lg">
                   <div className="text-3xl font-bold text-gray-700 mb-1">
-                    15+
+                    10+
                   </div>
                   <div className="text-sm text-gray-600">Years Experience</div>
                 </div>
@@ -158,7 +158,7 @@ const AboutUs = () => {
                 },
                 {
                   icon: Calendar,
-                  title: "15+ Years Experience",
+                  title: "10+ Years Experience",
                   description:
                     "Deep industry knowledge and proven track record",
                 },

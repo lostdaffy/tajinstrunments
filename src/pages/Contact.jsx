@@ -305,7 +305,7 @@ const Contact = () => {
                   </h3>
                   <div className="aspect-video rounded-2xl overflow-hidden">
                     <iframe
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3462.5!2d77.8880!3d29.8644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjnCsDUxJzUxLjgiTiA3N8KwNTMnMTYuOCJF!5e0!3m2!1sen!2sin!4v1234567890"
+                      src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3459.4206130057305!2d77.87702887554752!3d29.880978775006305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjnCsDUyJzUxLjUiTiA3N8KwNTInNDYuNiJF!5e0!3m2!1sen!2sin!4v1748420861496!5m2!1sen!2sin"
                       width="100%"
                       height="100%"
                       style={{ border: 0 }}

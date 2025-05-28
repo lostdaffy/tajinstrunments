@@ -1,73 +1,124 @@
 import React from "react";
+import { Check } from "lucide-react";
 
-const Journey = () => {
+export default function ConstructionLayout() {
+  const images = [
+    "images/civil-lab.webp",
+    "images/drawing-tools.webp",
+    "images/survey-instruments.webp",
+  ];
+
+  const features = [
+    "Survey & Engineering Instruments",
+    "Laboratory Testing Equipment",
+    "Scientific & Mathematical Tools",
+    "Hydrological Equipment",
+    "Soil Testing Instruments",
+    "Electronics & Electrical Items",
+  ];
+
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100">
-      {/* Journey Section */}
-      <div className="bg-white py-16 sm:py-20">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-12 sm:mb-16">
-              <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
-                Our Journey
-              </h2>
-              <p className="text-lg sm:text-xl text-gray-600">
-                A timeline of growth, innovation, and excellence
-              </p>
+    <div className="flex items-center justify-center bg-gray-50 min-h-screen px-4">
+      <div className="max-w-7xl mx-auto">
+        <div className="grid lg:grid-cols-2 gap-16 items-center">
+          {/* Left Side - Image Grid */}
+          <div className="space-y-4">
+            <div className="mb-8">
+              {/* Company Description Card */}
+              <div className="bg-gradient-to-br from-white to-sky-50/50 rounded-2xl p-8 shadow-lg border border-sky-100/50">
+                <div className="flex items-start space-x-4">
+                  <div className="bg-sky-500 rounded-full p-2 mt-1">
+                    <Check className="w-4 h-4 text-white" />
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-gray-900 text-xl mb-3">
+                      Since 2007
+                    </h3>
+                    <p className="text-gray-600 leading-relaxed">
+                      M/S Taj Enterprises is an ISO 9001:2015 certified
+                      manufacturer and supplier of precision survey,
+                      engineering, and laboratory instruments. We provide
+                      high-quality scientific equipment and reliable technical
+                      solutions to professionals across various industries.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
 
-            <div className="relative pl-10 sm:pl-12">
-              {/* Vertical timeline line */}
-              <div className="absolute left-4 sm:left-6 top-0 bottom-0 w-0.5 bg-gradient-to-b from-blue-500 to-purple-600"></div>
+            {/* Image Grid */}
+            <div className="grid grid-cols-3 gap-4">
+              {images.map((src, index) => (
+                <div
+                  key={index}
+                  className="aspect-square overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+                >
+                  <img
+                    src={src}
+                    alt={`Scientific and survey equipment ${index + 1}`}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
 
-              <div className="space-y-10 sm:space-y-12">
-                {[
-                  {
-                    year: "2008",
-                    title: "Company Founded",
-                    desc: "Started with a passion for precision surveying and a commitment to excellence",
-                  },
-                  {
-                    year: "2012",
-                    title: "Service Expansion",
-                    desc: "Added architectural drafting services to complement our surveying expertise",
-                  },
-                  {
-                    year: "2018",
-                    title: "Digital Revolution",
-                    desc: "Adopted cutting-edge digital tools, CAD software, and drone technology",
-                  },
-                  {
-                    year: "2023",
-                    title: "Major Milestone",
-                    desc: "Completed over 500 successful projects across residential and commercial sectors",
-                  },
-                ].map((item, index) => (
-                  <div
-                    key={index}
-                    className="relative flex flex-col sm:flex-row items-start sm:items-center space-y-4 sm:space-y-0 sm:space-x-6 group"
-                  >
-                    {/* Year badge */}
-                    <div className="flex-shrink-0 w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center text-white text-sm sm:text-base font-bold shadow-lg group-hover:scale-110 transition-transform duration-300">
-                      {item.year.slice(-2)}
-                    </div>
+          {/* Right Side - Content */}
+          <div className="space-y-8">
+            <div>
+              <p className="text-sky-400 font-semibold text-sm uppercase tracking-wider mb-4">
+                WHAT WE MANUFACTURE & SUPPLY
+              </p>
+              <h1 className="text-5xl lg:text-5xl font-bold text-gray-900 leading-tight mb-8">
+                Precision Instruments For Professional Excellence
+              </h1>
+            </div>
 
-                    {/* Content box */}
-                    <div className="flex-1 bg-gray-50 rounded-xl p-4 sm:p-6 group-hover:bg-blue-50 transition-colors duration-300">
-                      <div className="flex flex-col sm:flex-row sm:items-center sm:space-x-3 mb-2">
-                        <span className="text-lg sm:text-2xl font-bold text-blue-600">
-                          {item.year}
-                        </span>
-                        <span className="text-base sm:text-xl font-semibold text-gray-900">
-                          {item.title}
-                        </span>
-                      </div>
-                      <p className="text-gray-600 text-sm sm:text-base leading-relaxed">
-                        {item.desc}
-                      </p>
+            {/* Features Lists */}
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="space-y-4">
+                {features.slice(0, 3).map((feature, index) => (
+                  <div key={index} className="flex items-center space-x-3">
+                    <div className="flex-shrink-0">
+                      <Check className="w-5 h-5 text-sky-400" />
                     </div>
+                    <span className="text-gray-600 text-lg">{feature}</span>
                   </div>
                 ))}
+              </div>
+
+              <div className="space-y-4">
+                {features.slice(3).map((feature, index) => (
+                  <div
+                    key={`second-${index}`}
+                    className="flex items-center space-x-3"
+                  >
+                    <div className="flex-shrink-0">
+                      <Check className="w-5 h-5 text-sky-400" />
+                    </div>
+                    <span className="text-gray-600 text-lg">{feature}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* ISO Certification Badge */}
+            <div className="bg-white rounded-xl p-6 shadow-lg border-l-4 border-sky-400">
+              <div className="flex items-center space-x-4">
+                <div className="bg-sky-100 rounded-full p-3">
+                  <Check className="w-6 h-6 text-sky-400" />
+                </div>
+                <div>
+                  <h3 className="font-bold text-gray-900 text-lg">
+                    ISO 9001:2015 Certified
+                  </h3>
+                  <p className="text-gray-600">
+                    Quality Management System Certified Company
+                  </p>
+                  <p className="text-sm text-gray-500 mt-1">
+                    Established: December 27, 2007
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -75,6 +126,4 @@ const Journey = () => {
       </div>
     </div>
   );
-};
-
-export default Journey;
+}
