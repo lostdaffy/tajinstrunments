@@ -71,7 +71,7 @@ const Hero = () => {
           <div className="relative flex flex-col lg:flex-row items-center justify-center gap-6">
             {/* Left Small Image */}
             <div className="relative w-[80%] sm:w-[220px] h-[280px] lg:h-[300px] z-10 shadow-xl rounded-2xl overflow-hidden transform hover:scale-105 transition duration-500">
-              <img src="images/drawing-tools.jpg" alt="Drawing Tools" className="w-full h-full object-cover" />
+              <img src="images/drawing-tools.webp" alt="Drawing Tools" className="w-full h-full object-cover" />
               <div className="absolute bottom-3 left-3 text-white text-sm font-semibold flex items-center gap-2">
                 <Users className="text-green-400" size={16} />
                 Expert Team
@@ -80,7 +80,7 @@ const Hero = () => {
 
             {/* Central Large Image */}
             <div className="relative w-[85%] sm:w-[260px] h-[380px] lg:w-[300px] lg:h-[450px] z-20 shadow-2xl rounded-xl overflow-hidden transform hover:scale-105 transition duration-500">
-              <img src="images/survey-instruments.jpg" alt="Survey Instruments" className="w-full h-full object-cover" />
+              <img src="images/survey-instruments.webp" alt="Survey Instruments" className="w-full h-full object-cover" />
               <div className="absolute bottom-4 left-4 text-white">
                 <div className="flex items-center gap-2 mb-1">
                   <Award className="text-yellow-400" size={20} />
@@ -92,7 +92,7 @@ const Hero = () => {
 
             {/* Right Small Image */}
             <div className="relative w-[80%] sm:w-[220px] h-[280px] lg:h-[300px] z-10 shadow-xl rounded-2xl overflow-hidden transform hover:scale-105 transition duration-500">
-              <img src="images/civil-lab.jpg" alt="Civil Lab Equipment" className="w-full h-full object-cover" />
+              <img src="images/civil-lab.webp" alt="Civil Lab Equipment" className="w-full h-full object-cover" />
               <div className="absolute bottom-3 left-3 text-white text-sm font-semibold flex items-center gap-2">
                 <Star className="text-yellow-400" size={16} />
                 Innovation

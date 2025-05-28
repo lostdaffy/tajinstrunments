@@ -5,19 +5,19 @@ const TopCategory = () => {
   const categories = [
     {
       title: "Survey Instruments",
-      image: "images/survey-instruments.jpg",
+      image: "images/survey-instruments.webp",
     },
     {
       title: "Drawing Instruments",
-      image: "images/drawing-tools.jpg",
+      image: "images/drawing-tools.webp",
     },
     {
       title: "Civil Lab Instruments",
-      image: "images/civil-lab.jpg",
+      image: "images/civil-lab.webp",
     },
     {
       title: "Indian Brass Handicrafts",
-      image: "images/indian-teapots.jpg",
+      image: "images/indian-teapots.webp",
     },
   ];
 

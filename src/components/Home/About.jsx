@@ -8,7 +8,7 @@ const About = () => {
           {/* Text Content */}
           <div className="space-y-6">
             <div className="inline-flex items-center px-5 py-2 bg-gradient-to-r from-sky-400 to-blue-500 text-white text-sm font-semibold rounded-full shadow-md max-w-max">
-              Trusted Excellence Since 2025
+              Trusted Excellence Since 2015
             </div>
 
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight text-gray-900">
