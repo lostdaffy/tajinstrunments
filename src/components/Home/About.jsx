@@ -46,7 +46,7 @@ const About = () => {
               <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-600 rounded-3xl transform rotate-1 group-hover:rotate-2 transition-transform duration-500 opacity-20 pointer-events-none"></div>
               <div className="relative bg-white rounded-3xl overflow-hidden shadow-2xl group-hover:shadow-3xl transition-shadow duration-500">
                 <img
-                  src="images/drawing-tools.jpg"
+                  src="images/drawing-tools.webp"
                   className="w-full h-auto aspect-video object-cover"
                   alt="Professional Land Surveying"
                 />
@@ -67,7 +67,7 @@ const About = () => {
               <div className="absolute inset-0 bg-gradient-to-r from-green-500 to-teal-500 rounded-2xl transform -rotate-2 group-hover:-rotate-3 transition-transform duration-500 opacity-20 pointer-events-none"></div>
               <div className="relative bg-white rounded-2xl overflow-hidden shadow-xl group-hover:shadow-2xl transition-shadow duration-500">
                 <img
-                  src="images/civil-lab.jpg"
+                  src="images/civil-lab.webp"
                   className="w-full h-auto aspect-square object-cover"
                   alt="Architectural Drafting"
                 />
@@ -81,7 +81,7 @@ const About = () => {
               <div className="absolute inset-0 bg-gradient-to-r from-purple-500 to-pink-500 rounded-2xl transform rotate-2 group-hover:rotate-3 transition-transform duration-500 opacity-20 pointer-events-none"></div>
               <div className="relative bg-white rounded-2xl overflow-hidden shadow-xl group-hover:shadow-2xl transition-shadow duration-500">
                 <img
-                  src="images/indian-teapots.jpg"
+                  src="images/indian-teapots.webp"
                   className="w-full h-auto aspect-square object-cover"
                   alt="Digital CAD Tools"
                 />
