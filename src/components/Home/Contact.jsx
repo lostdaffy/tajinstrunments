@@ -10,17 +10,19 @@ const Contact = () => {
             Get in Touch
           </h2>
           <p className="text-base sm:text-lg text-gray-600 mb-6">
-            Have a question or want to work together? Fill out the form and we’ll get back to you as soon as possible.
+            Have a question or want to work together? Fill out the form and
+            we’ll get back to you as soon as possible.
           </p>
           <div className="space-y-4 text-gray-700 text-sm sm:text-base">
             <p>
-              <strong>Email:</strong> yourname@example.com
+              <strong>Email:</strong> tajenterprises0101@gmail.com
             </p>
             <p>
-              <strong>Phone:</strong> +123 456 7890
+              <strong>Phone:</strong> +91 9897748786, +91 9410907725
             </p>
             <p>
-              <strong>Location:</strong> City, Country
+              <strong>Address:</strong> H.NO-400B/4, Eidgah Enclave, Near Rampur
+              Chungi, Dehradun Road, Roorkee, 247667, Uttarakhand, India.
             </p>
           </div>
         </div>
@@ -28,25 +30,31 @@ const Contact = () => {
         {/* Contact Form */}
         <form className="space-y-6">
           <div>
-            <label className="block text-sm font-medium text-gray-700">Name</label>
+            <label className="block text-sm font-medium text-gray-700">
+              Name
+            </label>
             <input
               type="text"
               className="w-full mt-1 px-4 py-3 rounded-lg bg-gray-100 text-gray-800 focus:outline-none focus:ring-2 focus:ring-sky-400"
-              placeholder="Your Name"
+              placeholder="Enter Your Name"
               required
             />
           </div>
           <div>
-            <label className="block text-sm font-medium text-gray-700">Email</label>
+            <label className="block text-sm font-medium text-gray-700">
+              Email
+            </label>
             <input
               type="email"
               className="w-full mt-1 px-4 py-3 rounded-lg bg-gray-100 text-gray-800 focus:outline-none focus:ring-2 focus:ring-sky-400"
-              placeholder="you@example.com"
+              placeholder="Enter Your Email ID"
               required
             />
           </div>
           <div>
-            <label className="block text-sm font-medium text-gray-700">Message</label>
+            <label className="block text-sm font-medium text-gray-700">
+              Message
+            </label>
             <textarea
               rows="4"
               className="w-full mt-1 px-4 py-3 rounded-lg bg-gray-100 text-gray-800 focus:outline-none focus:ring-2 focus:ring-sky-400"

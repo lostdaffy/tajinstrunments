@@ -1,27 +1,23 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import survey_instruments from "../../assets/survey-instruments.jpg";
-import drawing_tools from "../../assets/drawing-tools.jpg";
-import civil_lab from "../../assets/civil-lab.jpg";
-import indian_teapots from "../../assets/indian-teapots.jpg";
 
 const TopCategory = () => {
   const categories = [
     {
       title: "Survey Instruments",
-      image: survey_instruments,
+      image: "images/survey-instruments.jpg",
     },
     {
       title: "Drawing Instruments",
-      image: drawing_tools,
+      image: "images/drawing-tools.jpg",
     },
     {
       title: "Civil Lab Instruments",
-      image: civil_lab,
+      image: "images/civil-lab.jpg",
     },
     {
       title: "Indian Brass Handicrafts",
-      image: indian_teapots,
+      image: "images/indian-teapots.jpg",
     },
   ];
 

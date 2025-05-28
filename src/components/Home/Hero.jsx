@@ -8,9 +8,8 @@ import {
   Award,
 } from "lucide-react";
 
-import survey_instruments from "../../assets/survey-instruments.jpg";
-import drawing_tools from "../../assets/drawing-tools.jpg";
-import civil_lab from "../../assets/civil-lab.jpg";
+
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -41,7 +40,7 @@ const Hero = () => {
             <div className="grid grid-cols-3 gap-4 md:gap-6">
               {[
                 { label: "Happy Clients", value: "500+" },
-                { label: "Years Experience", value: "15+" },
+                { label: "Years Experience", value: "10+" },
                 { label: "Success Rate", value: "98%" },
               ].map((stat, i) => (
                 <div className="text-center" key={i}>
@@ -53,18 +52,18 @@ const Hero = () => {
 
             {/* Buttons */}
             <div className="flex flex-wrap gap-4">
-              <button className="group bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-600 hover:to-blue-700 text-white font-semibold px-6 md:px-8 py-3 md:py-4 rounded-xl transition-all duration-300 flex items-center gap-2 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+              <Link to="/contact" className="group bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-600 hover:to-blue-700 text-white font-semibold px-6 md:px-8 py-3 md:py-4 rounded-xl transition-all duration-300 flex items-center gap-2 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
                 <Phone size={20} />
                 Contact Us
                 <ChevronRight
                   size={16}
                   className="group-hover:translate-x-1 transition-transform"
                 />
-              </button>
-              <button className="group bg-white/10 backdrop-blur-sm text-white font-semibold px-6 md:px-8 py-3 md:py-4 rounded-xl border border-white/20 hover:bg-white/20 transition-all duration-300 flex items-center gap-2">
+              </Link>
+              <Link to="/instruments-categories" className="group bg-white/10 backdrop-blur-sm text-white font-semibold px-6 md:px-8 py-3 md:py-4 rounded-xl border border-white/20 hover:bg-white/20 transition-all duration-300 flex items-center gap-2">
                 <BookOpen size={20} />
                 View Categories
-              </button>
+              </Link>
             </div>
           </div>
 
@@ -72,7 +71,7 @@ const Hero = () => {
           <div className="relative flex flex-col lg:flex-row items-center justify-center gap-6">
             {/* Left Small Image */}
             <div className="relative w-[80%] sm:w-[220px] h-[280px] lg:h-[300px] z-10 shadow-xl rounded-2xl overflow-hidden transform hover:scale-105 transition duration-500">
-              <img src={drawing_tools} alt="Drawing Tools" className="w-full h-full object-cover" />
+              <img src="images/drawing-tools.jpg" alt="Drawing Tools" className="w-full h-full object-cover" />
               <div className="absolute bottom-3 left-3 text-white text-sm font-semibold flex items-center gap-2">
                 <Users className="text-green-400" size={16} />
                 Expert Team
@@ -81,7 +80,7 @@ const Hero = () => {
 
             {/* Central Large Image */}
             <div className="relative w-[85%] sm:w-[260px] h-[380px] lg:w-[300px] lg:h-[450px] z-20 shadow-2xl rounded-xl overflow-hidden transform hover:scale-105 transition duration-500">
-              <img src={survey_instruments} alt="Survey Instruments" className="w-full h-full object-cover" />
+              <img src="images/survey-instruments.jpg" alt="Survey Instruments" className="w-full h-full object-cover" />
               <div className="absolute bottom-4 left-4 text-white">
                 <div className="flex items-center gap-2 mb-1">
                   <Award className="text-yellow-400" size={20} />
@@ -93,7 +92,7 @@ const Hero = () => {
 
             {/* Right Small Image */}
             <div className="relative w-[80%] sm:w-[220px] h-[280px] lg:h-[300px] z-10 shadow-xl rounded-2xl overflow-hidden transform hover:scale-105 transition duration-500">
-              <img src={civil_lab} alt="Civil Lab Equipment" className="w-full h-full object-cover" />
+              <img src="images/civil-lab.jpg" alt="Civil Lab Equipment" className="w-full h-full object-cover" />
               <div className="absolute bottom-3 left-3 text-white text-sm font-semibold flex items-center gap-2">
                 <Star className="text-yellow-400" size={16} />
                 Innovation
