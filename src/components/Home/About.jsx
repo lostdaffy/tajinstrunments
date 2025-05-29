@@ -80,10 +80,6 @@ const About = () => {
                     alt={item.alt}
                     className="w-full h-auto aspect-square object-cover"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
-                  <div className="absolute bottom-3 left-3 text-white">
-                    <p className="text-sm font-semibold">{item.caption}</p>
-                  </div>
                 </div>
               </div>
             ))}

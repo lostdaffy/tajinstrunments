@@ -5,6 +5,7 @@ import Contact from "./pages/Contact.jsx";
 import InstrumentsCategories from "./pages/InstrumentsCategories.jsx";
 import Instruments from "./pages/Instruments.jsx";
 import About from "./pages/About.jsx";
+import Payment from "./pages/payment.jsx";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         element={<InstrumentsCategories />}
       />
       <Route path="/instruments" element={<Instruments />} />
+      <Route path="/payment" element={<Payment />} />
     </Routes>
   );
 }

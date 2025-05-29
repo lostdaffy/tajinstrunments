@@ -1,51 +1,10 @@
-import React, { useState } from "react";
-import {
-  Mail,
-  Phone,
-  MapPin,
-  Clock,
-  Send,
-  User,
-  MessageSquare,
-  Building2,
-  CheckCircle,
-} from "lucide-react";
-import Navbar from "../components/global/Navbar";
+import React from "react";
+import { Phone, Mail, MapPin, Clock, Building2 } from "lucide-react";
+import ContactForm from "../components/global/ContactForm";
 import Footer from "../components/global/Footer";
+import Navbar from "../components/global/Navbar";
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    subject: "",
-    message: "",
-  });
-  const [isSubmitted, setIsSubmitted] = useState(false);
-
-  const handleInputChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setIsSubmitted(true);
-    // Reset form after 3 seconds
-    setTimeout(() => {
-      setIsSubmitted(false);
-      setFormData({
-        name: "",
-        email: "",
-        phone: "",
-        subject: "",
-        message: "",
-      });
-    }, 3000);
-  };
-
   return (
     <>
       <Navbar />
@@ -92,6 +51,13 @@ const Contact = () => {
                   className="text-sky-400 hover:text-sky-600 font-medium break-all transition-colors"
                 >
                   tajenterprises0101@gmail.com
+                </a>
+                <br />
+                <a
+                  href="mailto:info@tajinstruments.com"
+                  className="text-sky-400 hover:text-sky-600 font-medium break-all transition-colors"
+                >
+                  info@tajinstruments.com
                 </a>
               </div>
 
@@ -157,148 +123,13 @@ const Contact = () => {
         <div className="bg-white/60 backdrop-blur-sm py-20 px-6 md:px-12 lg:px-24">
           <div className="max-w-7xl mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+             
               {/* Contact Form */}
-              <div className="bg-white rounded-3xl p-8 shadow-2xl border border-gray-100">
-                <div className="flex items-center gap-3 mb-8">
-                  <Building2 className="w-8 h-8 text-sky-400" />
-                  <h2 className="text-3xl font-bold text-gray-900">
-                    Send Us a Message
-                  </h2>
-                </div>
 
-                {isSubmitted ? (
-                  <div className="text-center py-12">
-                    <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                      <CheckCircle className="w-10 h-10 text-green-500" />
-                    </div>
-                    <h3 className="text-2xl font-bold text-gray-900 mb-3">
-                      Message Sent Successfully!
-                    </h3>
-                    <p className="text-gray-600">
-                      Thank you for contacting us. We'll get back to you within
-                      24 hours.
-                    </p>
-                  </div>
-                ) : (
-                  <div className="space-y-6">
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                      <div>
-                        <label className="block text-sm font-semibold text-gray-700 mb-2">
-                          Full Name *
-                        </label>
-                        <div className="relative">
-                          <User className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400" />
-                          <input
-                            type="text"
-                            name="name"
-                            value={formData.name}
-                            onChange={handleInputChange}
-                            required
-                            className="w-full pl-12 pr-4 py-4 border border-gray-200 rounded-xl focus:ring-2 focus:ring-sky-400 focus:border-transparent transition-all duration-300"
-                            placeholder="Enter your full name"
-                          />
-                        </div>
-                      </div>
+              <ContactForm />
 
-                      <div>
-                        <label className="block text-sm font-semibold text-gray-700 mb-2">
-                          Email Address *
-                        </label>
-                        <div className="relative">
-                          <Mail className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400" />
-                          <input
-                            type="email"
-                            name="email"
-                            value={formData.email}
-                            onChange={handleInputChange}
-                            required
-                            className="w-full pl-12 pr-4 py-4 border border-gray-200 rounded-xl focus:ring-2 focus:ring-sky-400 focus:border-transparent transition-all duration-300"
-                            placeholder="Enter your email"
-                          />
-                        </div>
-                      </div>
-                    </div>
-
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                      <div>
-                        <label className="block text-sm font-semibold text-gray-700 mb-2">
-                          Phone Number
-                        </label>
-                        <div className="relative">
-                          <Phone className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400" />
-                          <input
-                            type="tel"
-                            name="phone"
-                            value={formData.phone}
-                            onChange={handleInputChange}
-                            className="w-full pl-12 pr-4 py-4 border border-gray-200 rounded-xl focus:ring-2 focus:ring-sky-400 focus:border-transparent transition-all duration-300"
-                            placeholder="Enter your phone number"
-                          />
-                        </div>
-                      </div>
-
-                      <div>
-                        <label className="block text-sm font-semibold text-gray-700 mb-2">
-                          Subject *
-                        </label>
-                        <select
-                          name="subject"
-                          value={formData.subject}
-                          onChange={handleInputChange}
-                          required
-                          className="w-full px-4 py-4 border border-gray-200 rounded-xl focus:ring-2 focus:ring-sky-400 focus:border-transparent transition-all duration-300"
-                        >
-                          <option value="">Select a subject</option>
-                          <option value="Product Inquiry">
-                            Product Inquiry
-                          </option>
-                          <option value="Service Request">
-                            Service Request
-                          </option>
-                          <option value="Technical Support">
-                            Technical Support
-                          </option>
-                          <option value="Quote Request">Quote Request</option>
-                          <option value="General Information">
-                            General Information
-                          </option>
-                          <option value="Other">Other</option>
-                        </select>
-                      </div>
-                    </div>
-
-                    <div>
-                      <label className="block text-sm font-semibold text-gray-700 mb-2">
-                        Message *
-                      </label>
-                      <div className="relative">
-                        <MessageSquare className="absolute left-3 top-4 w-5 h-5 text-gray-400" />
-                        <textarea
-                          name="message"
-                          value={formData.message}
-                          onChange={handleInputChange}
-                          required
-                          rows="6"
-                          className="w-full pl-12 pr-4 py-4 border border-gray-200 rounded-xl focus:ring-2 focus:ring-sky-400 focus:border-transparent transition-all duration-300 resize-none"
-                          placeholder="Tell us about your requirements or questions..."
-                        ></textarea>
-                      </div>
-                    </div>
-
-                    <button
-                      onClick={handleSubmit}
-                      className="w-full bg-gradient-to-r from-sky-400 to-sky-600 text-white font-semibold py-4 px-8 rounded-xl hover:from-sky-500 hover:to-sky-700 transition-all duration-300 flex items-center justify-center gap-3 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
-                    >
-                      <Send className="w-5 h-5" />
-                      Send Message
-                    </button>
-                  </div>
-                )}
-              </div>
-
-              {/* Map & Additional Info */}
+              {/* Map & Quick Info */}
               <div className="space-y-8">
-                {/* Map */}
                 <div className="bg-white rounded-3xl p-8 shadow-2xl border border-gray-100">
                   <h3 className="text-2xl font-bold text-gray-900 mb-6">
                     Find Us Here
@@ -317,7 +148,6 @@ const Contact = () => {
                   </div>
                 </div>
 
-                {/* Quick Contact Info */}
                 <div className="bg-gradient-to-r from-sky-500 to-sky-600 rounded-3xl p-8 shadow-2xl text-white">
                   <h3 className="text-2xl font-bold mb-6">Quick Contact</h3>
                   <div className="space-y-6">
@@ -327,23 +157,36 @@ const Contact = () => {
                       </div>
                       <div>
                         <h4 className="font-semibold mb-1">Email</h4>
-                        <p className="text-sky-100">
+                        <a
+                          href="mailto:tajenterprises0101@gmail.com"
+                          className="hover:underline"
+                        >
                           tajenterprises0101@gmail.com
-                        </p>
+                        </a>
+                        <br />
+                        <a
+                          href="mailto:info@tajinstruments.com"
+                          className="hover:underline"
+                        >
+                          info@tajinstruments.com
+                        </a>
                       </div>
                     </div>
-
                     <div className="flex items-start gap-4">
                       <div className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center flex-shrink-0">
                         <Phone className="w-6 h-6" />
                       </div>
                       <div>
                         <h4 className="font-semibold mb-1">Phone</h4>
-                        <p className="text-sky-100">+91 9897748786</p>
-                        <p className="text-sky-100">+91 9410907725</p>
+                        <a href="tel:+919897748786" className="hover:underline">
+                          +91 9897748786
+                        </a>
+                        <br />
+                        <a href="tel:+919410907725" className="hover:underline">
+                          +91 9410907725
+                        </a>
                       </div>
                     </div>
-
                     <div className="flex items-start gap-4">
                       <div className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center flex-shrink-0">
                         <MapPin className="w-6 h-6" />

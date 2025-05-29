@@ -6,6 +6,7 @@ import {
   CheckCircle,
   Calendar,
   Building2,
+  FileText,
 } from "lucide-react";
 import Navbar from "../components/global/Navbar";
 import Footer from "../components/global/Footer";
@@ -24,7 +25,7 @@ const AboutUs = () => {
               <div className="absolute -inset-4 bg-gradient-to-r from-gray-400 to-sky-400 rounded-3xl blur-xl opacity-10 group-hover:opacity-20 transition-opacity duration-500"></div>
               <div className="relative bg-white p-8 rounded-3xl shadow-2xl border border-white/20 backdrop-blur-sm">
                 <img
-                  src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=600&h=400&fit=crop&crop=entropy&auto=format&q=80"
+                  src="/images/about-i677.webp"
                   alt="About M/S Taj Enterprises - Precision Instruments"
                   className="rounded-2xl w-full h-80 object-cover shadow-lg"
                 />
@@ -72,18 +73,37 @@ const AboutUs = () => {
                 </p>
               </div>
 
-              {/* Stats Cards */}
-              <div className="grid grid-cols-2 gap-6">
-                <div className="bg-white backdrop-blur-sm p-6 rounded-2xl border border-gray-200 shadow-lg">
-                  <div className="text-3xl font-bold text-gray-700 mb-1">
-                    10+
+              {/* Business Registration Details */}
+              <div className="bg-gradient-to-r from-gray-50 to-sky-50 p-6 rounded-2xl border border-gray-200 shadow-sm">
+                <h3 className="text-lg font-bold text-gray-800 mb-4 flex items-center gap-2">
+                  <i className="ri-file-list-line"></i>
+                  Business Registration Details
+                </h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
+                  <div className="flex justify-between">
+                    <span className="text-gray-800">
+                      <strong>TIN: </strong>05007672822
+                    </span>
                   </div>
-                  <div className="text-sm text-gray-600">Years Experience</div>
-                </div>
-                <div className="bg-white backdrop-blur-sm p-6 rounded-2xl border border-gray-200 shadow-lg">
-                  <div className="text-3xl font-bold text-sky-400 mb-1">9</div>
-                  <div className="text-sm text-gray-600">
-                    Product Categories
+                  <div className="flex justify-between">
+                    <span className="text-gray-800">
+                      <strong>CST: </strong> Rk.5105546
+                    </span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-gray-800">
+                      <strong>GST: </strong>05ALBPA5026C1Z1
+                    </span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-gray-800">
+                      <strong>SSI No.: </strong> 050131100346
+                    </span>
+                  </div>
+                  <div className="flex justify-between md:col-span-2">
+                    <span className="text-gray-800">
+                      <strong>IEC No.: </strong>6112001365
+                    </span>
                   </div>
                 </div>
               </div>

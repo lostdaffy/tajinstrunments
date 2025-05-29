@@ -137,6 +137,13 @@ const Footer = () => {
               >
                 tajenterprises0101@gmail.com
               </a>
+              <br />
+              <a
+                href="mailto:tajenterprises0101@gmail.com"
+                className="hover:underline"
+              >
+                info@tajinstrunments.com
+              </a>
             </div>
             <div>
               <strong>
@@ -146,7 +153,7 @@ const Footer = () => {
               <a href="tel:+919897748786" className="hover:underline">
                 +91 9897748786
               </a>
-              ,{" "}
+              <br />
               <a href="tel:+919410907725" className="hover:underline">
                 +91 9410907725
               </a>
