@@ -4,22 +4,41 @@ import { Link } from "react-router-dom";
 import { products } from "./productsData";
 
 const imageMap = {
-  scale: "/images/scale.webp",
-  compass: "/images/compass.webp",
-  protractor: "/images/protractor.webp",
-  drawing_set: "/images/drawing_set.webp",
-  t_square: "/images/t_square.webp",
-  measuring_tape: "/images/measuring_tape.webp",
-  tripod: "/images/tripod.webp",
-  plumb_bob: "/images/plumb_bob.webp",
-  steel_tape: "/images/steel_tape.webp",
+  aluminum_tripod_stand: "/images/Aluminum-Tripod-stand.webp",
+  auto_level_geomax_zal128: "/images/Auto-Level-Geomax-ZAL128.webp",
+  auto_level_leica_jogger: "/images/Auto-Level-Leica-Jogger.webp",
+  auto_level_setl_at_24: "/images/Auto-Level-SETL-AT-24.webp",
+  auto_level_topcon_at_b4: "/images/Auto-Level-Topcon-AT-B4.webp",
+  dgps_geomax_zenith_series10_20: "/images/DGPS-geomax_zenith_series10_20.webp",
+  digital_theodolite_sokkia_dt_540: "/images/Digital-Theodolite-sokkia-DT-540.webp",
+  electronic_theodolite_setl_dt_02: "/images/Electronic-Theodolite-SETL-DT-02.webp",
+  fish_finder: "/images/fish-finder.webp",
+  Auto_Level_Sokkia_B40: "/images/Auto-Level-Sokkia-B-40.webp",
+  GeoMax_Digital_Level_ZDL700: "/images/GeoMax_Digital_Level_ZDL700.webp",
+  Geomax_Total_station_Zt20R: "/images/Geomax-Total-station-Zt20R.webp",
+  GPS_etrex_10: "/images/GPS-etrex-10.webp",
+  GPS_etrex_20: "/images/GPS-etrex-20.webp",
+  GPS_etrex_30: "/images/GPS-etrex-30.webp",
+  Kolida_Total_Station_KTS_440: "/images/Kolida-Total-Station-KTS-440.webp",
+  mini_prism_set_with_pole: "/images/mini-prism-set-with-pole.webp",
+  plane_table_set: "/images/plane-table-set.webp",
+  prism_pole: "/images/prism-pole.webp",
+  South_DigitalLevel_DL_200_Series: "/images/South-DigitalLevel-DL-200-Series.webp",
+  South_Digital_Theodolite_ET_02: "/images/South-Digital-Theodolite-ET-02.webp",
+  South_Total_Station_Nts310_series: "/images/South-Total-Station-Nts310-series.webp",
+  TERRANO_ELECTRONIC_THEODOLITE_DE_2B: "/images/TERRANO_ELECTRONIC_THEODOLITE-DE-2B.webp",
+  Topcon_Optical_Plummet_Tribrach_01: "/images/Topcon_Optical_Plummet_Tribrach-01.webp",
+  Topcon_Total_Station_2_Topcon_GTS_102N_: "/images/Topcon-Total-Station-2-Topcon-GTS-102N-.webp",
+  Topcon_Total_Station_cygnus_ks102: "/images/Topcon-Total-Station-cygnus-ks102.webp",
+  Topcon_Total_Station_Es_101: "/images/Topcon-Total-Station-Es-101.webp",
+  Topcon_Total_station_gowin_kts_202: "/images/Topcon-Total-station-gowin-kts-202.webp",
+  Total_station_GeoMax_Zipp10_Pro: "/images/Total-station-GeoMax-Zipp10-Pro.webp",
 };
-
 
 
 const Instrument = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [selectedCategory, setSelectedCategory] = useState("Drawing");
+  const [selectedCategory, setSelectedCategory] = useState("Survey");
   const [isCategoryMenuOpen, setIsCategoryMenuOpen] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
   const [itemsPerPage] = useState(5);
@@ -47,7 +66,10 @@ const Instrument = () => {
 
   const totalPages = Math.ceil(filteredProducts.length / itemsPerPage);
   const startIndex = (currentPage - 1) * itemsPerPage;
-  const currentProducts = filteredProducts.slice(startIndex, startIndex + itemsPerPage);
+  const currentProducts = filteredProducts.slice(
+    startIndex,
+    startIndex + itemsPerPage
+  );
 
   const handlePageChange = (page) => {
     setCurrentPage(page);
@@ -66,7 +88,9 @@ const Instrument = () => {
             >
               <span>Categories</span>
               <i
-                className={`ri-arrow-${isCategoryMenuOpen ? "up" : "down"}-s-line text-lg`}
+                className={`ri-arrow-${
+                  isCategoryMenuOpen ? "up" : "down"
+                }-s-line text-lg`}
               ></i>
             </button>
             {isCategoryMenuOpen && (
@@ -99,7 +123,9 @@ const Instrument = () => {
                 </h1>
               </div>
               <div className="bg-gray-200 p-6 rounded">
-                <h3 className="text-base font-bold text-gray-700 mb-4">Categories</h3>
+                <h3 className="text-base font-bold text-gray-700 mb-4">
+                  Categories
+                </h3>
                 <ul className="space-y-2">
                   {categories.map((item, index) => (
                     <li
@@ -251,11 +277,17 @@ const Instrument = () => {
           </div>
           <div>
             <strong className="block mb-1">Mobile No.:</strong>
-            <a href="tel:+919897748786" className="text-blue-600 hover:underline">
+            <a
+              href="tel:+919897748786"
+              className="text-blue-600 hover:underline"
+            >
               +91 9897748786
             </a>
             ,{" "}
-            <a href="tel:+919410907725" className="text-blue-600 hover:underline">
+            <a
+              href="tel:+919410907725"
+              className="text-blue-600 hover:underline"
+            >
               +91 9410907725
             </a>
           </div>
