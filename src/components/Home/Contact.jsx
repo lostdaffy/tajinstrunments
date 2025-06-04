@@ -1,22 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import ContactForm from "../global/ContactForm";
+
+
 
 const Contact = () => {
   return (
-    <section className="w-full min-h-screen flex items-center justify-center px-20 py-12">
-      <div className="w-full bg-white rounded-3xl p-6 sm:p-10 md:p-16 grid grid-cols-1 lg:grid-cols-2 gap-12">
+    <section className="w-full min-h-screen flex items-center justify-center px-4 sm:px-6 md:px-8 lg:px-12 xl:px-20 py-8 sm:py-12">
+      <div className="w-full max-w-7xl bg-white rounded-2xl sm:rounded-3xl p-4 sm:p-6 md:p-8 lg:p-12 xl:p-16 grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 lg:gap-12 shadow-xl">
         {/* Contact Info */}
-        <div className="flex flex-col justify-center space-y-8">
-          <div className="space-y-4">
+        <div className="flex flex-col justify-center space-y-6 sm:space-y-8">
+          <div className="space-y-3 sm:space-y-4">
             <div className="inline-block">
-              <span className="text-sky-400 text-sm font-semibold tracking-wider uppercase">
+              <span className="text-sky-400 text-xs sm:text-sm font-semibold tracking-wider uppercase">
                 Contact Us
               </span>
             </div>
-            <h2 className="text-4xl sm:text-5xl font-bold text-gray-800 leading-tight">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 leading-tight">
               Let's Start a Conversation
             </h2>
-            <p className="text-lg text-gray-600 leading-relaxed">
+            <p className="text-base sm:text-lg text-gray-600 leading-relaxed">
               Ready to bring your ideas to life? We're here to help you every
               step of the way. Reach out and let's create something amazing
               together.
@@ -24,12 +26,12 @@ const Contact = () => {
           </div>
 
           {/* Contact Details */}
-          <div className="space-y-6">
+          <div className="space-y-4 sm:space-y-6">
             {/* Email */}
-            <div className="flex items-start space-x-4 group">
-              <div className="flex-shrink-0 w-12 h-12 bg-sky-400 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+            <div className="flex items-start space-x-3 sm:space-x-4 group">
+              <div className="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 bg-sky-400 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                 <svg
-                  className="w-6 h-6 text-white"
+                  className="w-5 h-5 sm:w-6 sm:h-6 text-white"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -42,22 +44,24 @@ const Contact = () => {
                   />
                 </svg>
               </div>
-              <div>
-                <h3 className="font-semibold text-gray-800 mb-1">Email</h3>
-                <p className="text-gray-600 hover:text-sky-400 transition-colors cursor-pointer">
+              <div className="min-w-0 flex-1">
+                <h3 className="font-semibold text-gray-800 mb-1 text-sm sm:text-base">
+                  Email
+                </h3>
+                <p className="text-gray-600 hover:text-sky-400 transition-colors cursor-pointer text-sm sm:text-base break-all">
                   tajenterprises0101@gmail.com
                 </p>
-                <p className="text-gray-600 hover:text-sky-400 transition-colors cursor-pointer">
+                <p className="text-gray-600 hover:text-sky-400 transition-colors cursor-pointer text-sm sm:text-base break-all">
                   info@tajinstrunments.com
                 </p>
               </div>
             </div>
 
             {/* Phone */}
-            <div className="flex items-start space-x-4 group">
-              <div className="flex-shrink-0 w-12 h-12 bg-sky-400 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+            <div className="flex items-start space-x-3 sm:space-x-4 group">
+              <div className="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 bg-sky-400 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                 <svg
-                  className="w-6 h-6 text-white"
+                  className="w-5 h-5 sm:w-6 sm:h-6 text-white"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -71,12 +75,14 @@ const Contact = () => {
                 </svg>
               </div>
               <div>
-                <h3 className="font-semibold text-gray-800 mb-1">Phone</h3>
+                <h3 className="font-semibold text-gray-800 mb-1 text-sm sm:text-base">
+                  Phone
+                </h3>
                 <div className="space-y-1">
-                  <p className="text-gray-600 hover:text-sky-400 transition-colors cursor-pointer">
+                  <p className="text-gray-600 hover:text-sky-400 transition-colors cursor-pointer text-sm sm:text-base">
                     +91 9897748786
                   </p>
-                  <p className="text-gray-600 hover:text-sky-400 transition-colors cursor-pointer">
+                  <p className="text-gray-600 hover:text-sky-400 transition-colors cursor-pointer text-sm sm:text-base">
                     +91 9410907725
                   </p>
                 </div>
@@ -84,10 +90,10 @@ const Contact = () => {
             </div>
 
             {/* Address */}
-            <div className="flex items-start space-x-4 group">
-              <div className="flex-shrink-0 w-12 h-12 bg-sky-400 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+            <div className="flex items-start space-x-3 sm:space-x-4 group">
+              <div className="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 bg-sky-400 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                 <svg
-                  className="w-6 h-6 text-white"
+                  className="w-5 h-5 sm:w-6 sm:h-6 text-white"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -106,9 +112,11 @@ const Contact = () => {
                   />
                 </svg>
               </div>
-              <div>
-                <h3 className="font-semibold text-gray-800 mb-1">Address</h3>
-                <p className="text-gray-600 leading-relaxed">
+              <div className="min-w-0 flex-1">
+                <h3 className="font-semibold text-gray-800 mb-1 text-sm sm:text-base">
+                  Address
+                </h3>
+                <p className="text-gray-600 leading-relaxed text-sm sm:text-base">
                   H.NO-400B/4, Eidgah Enclave,
                   <br />
                   Near Rampur Chungi, Dehradun Road,
@@ -120,10 +128,10 @@ const Contact = () => {
           </div>
 
           {/* Social proof or additional info */}
-          <div className="pt-6 border-t border-gray-200">
-            <p className="text-sm text-gray-500 flex items-center">
+          <div className="pt-4 sm:pt-6 border-t border-gray-200">
+            <p className="text-xs sm:text-sm text-gray-500 flex items-center">
               <svg
-                className="w-5 h-5 text-sky-400 mr-2"
+                className="w-4 h-4 sm:w-5 sm:h-5 text-sky-400 mr-2 flex-shrink-0"
                 fill="currentColor"
                 viewBox="0 0 20 20"
               >
@@ -139,7 +147,7 @@ const Contact = () => {
         </div>
 
         {/* Contact Form */}
-        <div className=" ">
+        <div className="order-first lg:order-last">
           <ContactForm />
         </div>
       </div>
