@@ -16,8 +16,8 @@ const TopCategory = () => {
       image: "images/civil-lab.webp",
     },
     {
-      title: "Indian Brass Handicrafts",
-      image: "images/indian-teapots.webp",
+      title: "Soild Testing Instruments",
+      image: "images/Permeability-Apparatus.webp",
     },
   ];
 

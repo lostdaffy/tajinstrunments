@@ -17,8 +17,8 @@ const InstrumentsCategory = () => {
       image: "images/civil-lab.webp",
     },
     {
-      title: "Indian Brass Handicrafts",
-      image: "images/indian-teapots.webp",
+      title: "Soil Testing",
+      image: "images/Permeability-Apparatus.webp",
     },
   ];
 

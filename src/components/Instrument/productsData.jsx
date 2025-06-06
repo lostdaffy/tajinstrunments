@@ -232,4 +232,79 @@ export const products = [
     description:
       "GeoMax Zipp10 Pro ek rugged aur reliable total station hai daily site work ke liye. Construction aur topographic surveys ke liye excellent choice hai.",
   },
+
+  // soild testing instruments
+  // Soil Testing Instruments
+  {
+    id: 30,
+    category: "Soil Testing",
+    title: "Auger Post Hole Digger",
+    image: "auger_post_hole_digger",
+    description:
+      "A manual auger used for boring holes in the ground. It is ideal for post hole digging and shallow soil sampling.",
+  },
+  {
+    id: 31,
+    category: "Soil Testing",
+    title: "Core Cutter Apparatus",
+    image: "core_cutter_apparatus",
+    description:
+      "Used to determine the in-situ density of cohesive soils by extracting a cylindrical core sample from the ground.",
+  },
+  {
+    id: 32,
+    category: "Soil Testing",
+    title: "Direct Shear Apparatus",
+    image: "direct_shear_apparatus",
+    description:
+      "This apparatus is used to measure the shear strength of soil samples, essential for analyzing slope stability and foundation design.",
+  },
+  {
+    id: 33,
+    category: "Soil Testing",
+    title: "Field CBR Test Apparatus",
+    image: "field_cbr_test_apparatus",
+    description:
+      "Used to determine the California Bearing Ratio (CBR) of soil in the field, which helps in road and pavement design.",
+  },
+  {
+    id: 34,
+    category: "Soil Testing",
+    title: "Field Density Apparatus",
+    image: "field_density_apparatus_sand_replacement",
+    description:
+      "Employed to measure the in-situ density of soil using the sand replacement method. Useful for compaction control.",
+  },
+  {
+    id: 35,
+    category: "Soil Testing",
+    title: "Liquid Limit Device",
+    image: "liquid_limit_device",
+    description:
+      "Used to determine the liquid limit of soil using the Casagrande method. Helps classify the soil’s consistency and behavior.",
+  },
+  {
+    id: 36,
+    category: "Soil Testing",
+    title: "Proctor Compaction Apparatus",
+    image: "proctor_compaction_apparatus",
+    description:
+      "This apparatus is used to find the optimum moisture content and maximum dry density of soil for compaction purposes.",
+  },
+  {
+    id: 37,
+    category: "Soil Testing",
+    title: "Sieve Set",
+    image: "sieve_set",
+    description:
+      "Used for particle size analysis of soil samples. Helps determine grain size distribution for soil classification.",
+  },
+  {
+    id: 38,
+    category: "Soil Testing",
+    title: "Unconfined Compression Testing Machine",
+    image: "unconfined_compression_testing_machine",
+    description:
+      "This machine is used to test the unconfined compressive strength of cohesive soil samples without lateral confinement.",
+  },
 ];

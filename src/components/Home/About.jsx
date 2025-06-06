@@ -13,14 +13,14 @@ const About = () => {
       caption: "Drafting Tools",
     },
     {
-      src: "images/indian-teapots.webp",
-      alt: "Civil Lab Equipment",
-      caption: "Lab Equipment",
+      src: "images/Permeability-Apparatus.webp",
+      alt: "Soil Testing",
+      caption: "Soil Testing",
     },
     {
       src: "images/survey-instruments.webp",
-      alt: "Brass Handicrafts",
-      caption: "Brass Handicrafts",
+      alt: "Survey Instruments",
+      caption: "Survey Instruments",
     },
   ];
 

@@ -33,6 +33,17 @@ const imageMap = {
   Topcon_Total_Station_Es_101: "/images/Topcon-Total-Station-Es-101.webp",
   Topcon_Total_station_gowin_kts_202: "/images/Topcon-Total-station-gowin-kts-202.webp",
   Total_station_GeoMax_Zipp10_Pro: "/images/Total-station-GeoMax-Zipp10-Pro.webp",
+
+  // Soil Testing Instruments
+  CBR_Test_Apparatus: "/images/CBR_Test_Apparatus.webp",
+  Core_Cutter_Apparatus: "/images/Core_Cutter_Apparatus.webp",
+  Dynamic_Cone_Penetration_Test_Apparatus: "/images/Dynamic_Cone_Penetration_Test_Apparatus.webp",
+  Liquid_Limit_Device: "/images/Liquid_Limit_Device.webp",
+  Permeability_Apparatus: "/images/Permeability_Apparatus.webp",
+  Plastic_Limit_Test_Set: "/images/Plastic_Limit_Test_Set.webp",
+  Rapid_Moisture_Meter: "/images/Rapid_Moisture_Meter.webp",
+  Shrinkage_Limit_Set: "/images/Shrinkage_Limit_Set.webp",
+  Unconfined_Compression_Testing_Machine: "/images/Unconfined_Compression_Testing_Machine.webp"
 };
 
 
@@ -48,7 +59,7 @@ const Instrument = () => {
     { title: "Survey" },
     { title: "Drawing" },
     { title: "Civil Lab" },
-    { title: "Indian Brass Handicrafts" },
+    { title: "Soil Testing" },
   ];
 
   const handleClick = (category) => {

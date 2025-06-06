@@ -6,6 +6,7 @@ import {
   Star,
   Users,
   Award,
+  Navigation,
 } from "lucide-react";
 
 const Hero = () => {
@@ -22,7 +23,8 @@ const Hero = () => {
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-tight">
                 Welcome to
                 <span className="bg-gradient-to-r from-sky-400 to-blue-500 bg-clip-text text-transparent block sm:inline">
-                  {" "}Taj Enterprises
+                  {" "}
+                  Taj Enterprises
                 </span>
               </h1>
               <p className="text-sm sm:text-base lg:text-lg text-gray-300 leading-relaxed max-w-2xl">
@@ -41,8 +43,12 @@ const Hero = () => {
                 { label: "Success Rate", value: "98%" },
               ].map((stat, i) => (
                 <div className="text-center" key={i}>
-                  <div className="text-xl sm:text-2xl md:text-3xl font-bold text-white">{stat.value}</div>
-                  <div className="text-sky-300 text-xs sm:text-sm">{stat.label}</div>
+                  <div className="text-xl sm:text-2xl md:text-3xl font-bold text-white">
+                    {stat.value}
+                  </div>
+                  <div className="text-sky-300 text-xs sm:text-sm">
+                    {stat.label}
+                  </div>
                 </div>
               ))}
             </div>
@@ -64,106 +70,234 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Right - Responsive Image Grid */}
+          {/* Right - Enhanced 4 Image Layout */}
           <div className="relative order-1 lg:order-2 w-full">
-            {/* Mobile Layout - Single Column Stack */}
-            <div className="block sm:hidden space-y-4 max-w-xs mx-auto">
-              {/* Main Featured Image */}
-              <div className="relative w-full h-64 shadow-2xl rounded-xl overflow-hidden transform hover:scale-105 transition duration-500">
-                <img src="/images/survey-instruments.webp" alt="Survey Instruments" className="w-full h-full object-cover" />
-                <div className="absolute bottom-3 left-3 text-white">
-                  <div className="flex items-center gap-2 mb-1">
-                    <Award className="text-yellow-400" size={16} />
-                    <span className="font-semibold text-sm">Premium Quality</span>
-                  </div>
-                  <p className="text-xs opacity-90">Excellence in every detail</p>
-                </div>
-              </div>
-              
-              {/* Secondary Images */}
+            {/* Mobile Layout - 2x2 Grid */}
+            <div className="block sm:hidden max-w-sm mx-auto">
               <div className="grid grid-cols-2 gap-3">
-                <div className="relative w-full h-40 shadow-xl rounded-xl overflow-hidden transform hover:scale-105 transition duration-500">
-                  <img src="/images/drawing-tools.webp" alt="Drawing Tools" className="w-full h-full object-cover" />
-                  <div className="absolute bottom-2 left-2 text-white text-xs font-semibold flex items-center gap-1">
-                    <Users className="text-green-400" size={12} />
-                    Expert Team
+                {/* Top Row */}
+                <div className="space-y-3">
+                  <div className="relative w-full h-32 shadow-xl rounded-xl overflow-hidden transform hover:scale-105 transition duration-500">
+                    <img
+                      src="/images/survey-instruments.webp"
+                      alt="Survey Instruments"
+                      className="w-full h-full object-cover"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                    <div className="absolute bottom-2 left-2 text-white text-xs font-semibold flex items-center gap-1">
+                      <Navigation className="text-blue-400" size={12} />
+                      Survey
+                    </div>
+                  </div>
+                  <div className="relative w-full h-32 shadow-xl rounded-xl overflow-hidden transform hover:scale-105 transition duration-500">
+                    <img
+                      src="/images/civil-lab.webp"
+                      alt="Civil Lab Equipment"
+                      className="w-full h-full object-cover"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                    <div className="absolute bottom-2 left-2 text-white text-xs font-semibold flex items-center gap-1">
+                      <Star className="text-yellow-400" size={12} />
+                      Lab
+                    </div>
                   </div>
                 </div>
-                <div className="relative w-full h-40 shadow-xl rounded-xl overflow-hidden transform hover:scale-105 transition duration-500">
-                  <img src="/images/civil-lab.webp" alt="Civil Lab Equipment" className="w-full h-full object-cover" />
-                  <div className="absolute bottom-2 left-2 text-white text-xs font-semibold flex items-center gap-1">
-                    <Star className="text-yellow-400" size={12} />
-                    Innovation
+                <div className="space-y-3">
+                  <div className="relative w-full h-32 shadow-xl rounded-xl overflow-hidden transform hover:scale-105 transition duration-500">
+                    <img
+                      src="/images/drawing-tools.webp"
+                      alt="Drawing Tools"
+                      className="w-full h-full object-cover"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                    <div className="absolute bottom-2 left-2 text-white text-xs font-semibold flex items-center gap-1">
+                      <Users className="text-green-400" size={12} />
+                      Tools
+                    </div>
                   </div>
+                  <div className="relative w-full h-32 shadow-xl rounded-xl overflow-hidden transform hover:scale-105 transition duration-500">
+                    <img
+                      src="/images/Permeability-Apparatus.webp"
+                      alt="Soil Testing"
+                      className="w-full h-full object-cover"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                    <div className="absolute bottom-2 left-2 text-white text-xs font-semibold flex items-center gap-1">
+                      <Award className="text-orange-400" size={12} />
+                      Soild
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Featured Badge */}
+              <div className="mt-4 text-center">
+                <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-sky-500/20 to-blue-500/20 rounded-full border border-sky-400/30 backdrop-blur-sm">
+                  <Award className="text-yellow-400" size={16} />
+                  <span className="text-white text-sm font-semibold">
+                    Premium Quality Products
+                  </span>
                 </div>
               </div>
             </div>
 
-            {/* Tablet Layout - 2 Column Grid */}
-            <div className="hidden sm:block md:hidden max-w-lg mx-auto">
-              <div className="grid grid-cols-2 gap-4 items-start">
-                {/* Left Column - Stacked Images */}
-                <div className="space-y-4">
-                  <div className="relative w-full h-48 shadow-xl rounded-xl overflow-hidden transform hover:scale-105 transition duration-500">
-                    <img src="/images/survey-instruments.webp" alt="Drawing Tools" className="w-full h-full object-cover" />
-                    <div className="absolute bottom-2 left-2 text-white text-sm font-semibold flex items-center gap-2">
-                      <Users className="text-green-400" size={14} />
-                      Expert Team
-                    </div>
-                  </div>
-                  <div className="relative w-full h-48 shadow-xl rounded-xl overflow-hidden transform hover:scale-105 transition duration-500">
-                    <img src="/images/drawing-tools.webp" alt="Civil Lab Equipment" className="w-full h-full object-cover" />
-                    <div className="absolute bottom-2 left-2 text-white text-sm font-semibold flex items-center gap-2">
-                      <Star className="text-yellow-400" size={14} />
-                      Innovation
-                    </div>
-                  </div>
-                </div>
-                
-                {/* Right Column - Main Featured Image */}
-                <div className="relative w-full h-full min-h-[400px] shadow-2xl rounded-xl overflow-hidden transform hover:scale-105 transition duration-500">
-                  <img src="/images/civil-lab.webp" alt="Survey Instruments" className="w-full h-full object-cover" />
+            {/* Tablet Layout - Asymmetric Grid */}
+            <div className="hidden sm:block md:hidden max-w-2xl mx-auto">
+              <div className="grid grid-cols-3 grid-rows-2 gap-4 h-96">
+                {/* Large featured image spans 2x2 */}
+                <div className="col-span-2 row-span-2 relative shadow-2xl rounded-xl overflow-hidden transform hover:scale-105 transition duration-500">
+                  <img
+                    src="/images/survey-instruments.webp"
+                    alt="Survey Instruments"
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
                   <div className="absolute bottom-4 left-4 text-white">
-                    <div className="flex items-center gap-2 mb-1">
-                      <Award className="text-yellow-400" size={18} />
-                      <span className="font-semibold">Premium Quality</span>
+                    <div className="flex items-center gap-2 mb-2">
+                      <Award className="text-yellow-400" size={20} />
+                      <span className="font-bold text-lg">Premium Quality</span>
                     </div>
-                    <p className="text-sm opacity-90">Excellence in every detail</p>
+                    <p className="text-sm opacity-90">
+                      Excellence in every detail
+                    </p>
+                  </div>
+                </div>
+
+                {/* Right column - 2 stacked images */}
+                <div className="relative shadow-xl rounded-xl overflow-hidden transform hover:scale-105 transition duration-500">
+                  <img
+                    src="/images/drawing-tools.webp"
+                    alt="Drawing Tools"
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                  <div className="absolute bottom-2 left-2 text-white text-sm font-semibold flex items-center gap-2">
+                    <Users className="text-green-400" size={14} />
+                    Drawing Tools
+                  </div>
+                </div>
+
+                <div className="relative shadow-xl rounded-xl overflow-hidden transform hover:scale-105 transition duration-500">
+                  <img
+                    src="/images/civil-lab.webp"
+                    alt="Civil Lab Equipment"
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                  <div className="absolute bottom-2 left-2 text-white text-sm font-semibold flex items-center gap-2">
+                    <Star className="text-yellow-400" size={14} />
+                    Lab Equipment
+                  </div>
+                </div>
+              </div>
+
+              {/* Bottom row for 4th image */}
+              <div className="mt-4 max-w-md mx-auto">
+                <div className="relative h-32 shadow-xl rounded-xl overflow-hidden transform hover:scale-105 transition duration-500">
+                  <img
+                    src="/images/Permeability-Apparatus.webp"
+                    alt="Soil Testing"
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-transparent to-black/60" />
+                  <div className="absolute inset-0 flex items-center justify-center text-white">
+                    <div className="text-center">
+                      <div className="flex items-center justify-center gap-2 mb-1">
+                        <Award className="text-orange-400" size={18} />
+                        <span className="font-bold">Soil Testing</span>
+                      </div>
+                      <p className="text-xs opacity-90">
+                        Authentic Indian Craftsmanship
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
 
-            {/* Desktop Layout - 3 Column Layout */}
-            <div className="hidden md:flex items-center justify-center gap-4 lg:gap-6">
-              {/* Left Small Image */}
-              <div className="relative w-[180px] lg:w-[220px] h-[240px] lg:h-[300px] xl:h-[320px] z-10 shadow-xl rounded-2xl overflow-hidden transform hover:scale-105 transition duration-500">
-                <img src="/images/survey-instruments.webp" alt="Drawing Tools" className="w-full h-full object-cover" />
-                <div className="absolute bottom-3 left-3 text-white text-sm font-semibold flex items-center gap-2">
-                  <Users className="text-green-400" size={16} />
-                  Expert Team
-                </div>
-              </div>
-
-              {/* Central Large Image */}
-              <div className="relative w-[220px] lg:w-[280px] xl:w-[320px] h-[320px] lg:h-[420px] xl:h-[480px] z-20 shadow-2xl rounded-xl overflow-hidden transform hover:scale-105 transition duration-500">
-                <img src="/images/drawing-tools.webp" alt="Survey Instruments" className="w-full h-full object-cover" />
-                <div className="absolute bottom-4 left-4 text-white">
-                  <div className="flex items-center gap-2 mb-1">
-                    <Award className="text-yellow-400" size={20} />
-                    <span className="font-semibold">Premium Quality</span>
+            {/* Desktop Layout - Creative 4 Image Arrangement */}
+            <div className="hidden md:block">
+              <div className="relative max-w-4xl mx-auto">
+                {/* Main container with relative positioning */}
+                <div className="grid grid-cols-4 grid-rows-3 gap-4 h-[500px] lg:h-[600px]">
+                  {/* Large featured image - spans 2x3 */}
+                  <div className="col-span-2 row-span-3 relative z-20 shadow-2xl rounded-2xl overflow-hidden transform hover:scale-105 transition duration-500">
+                    <img
+                      src="/images/survey-instruments.webp"
+                      alt="Survey Instruments"
+                      className="w-full h-full object-cover"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+                    <div className="absolute bottom-6 left-6 text-white">
+                      <div className="flex items-center gap-3 mb-2">
+                        <Award className="text-yellow-400" size={24} />
+                        <span className="font-bold text-xl">
+                          Survey Instruments
+                        </span>
+                      </div>
+                      <p className="text-base opacity-90 mb-3">
+                        Precision & Accuracy Guaranteed
+                      </p>
+                      <div className="flex items-center gap-2 text-sm bg-white/20 px-3 py-1 rounded-full backdrop-blur-sm">
+                        <Navigation className="text-blue-400" size={16} />
+                        Professional Grade
+                      </div>
+                    </div>
                   </div>
-                  <p className="text-sm opacity-90">Excellence in every detail</p>
-                </div>
-              </div>
 
-              {/* Right Small Image */}
-              <div className="relative w-[180px] lg:w-[220px] h-[240px] lg:h-[300px] xl:h-[320px] z-10 shadow-xl rounded-2xl overflow-hidden transform hover:scale-105 transition duration-500">
-                <img src="/images/civil-lab.webp" alt="Civil Lab Equipment" className="w-full h-full object-cover" />
-                <div className="absolute bottom-3 left-3 text-white text-sm font-semibold flex items-center gap-2">
-                  <Star className="text-yellow-400" size={16} />
-                  Innovation
+                  {/* Top right image */}
+                  <div className="col-span-2 row-span-1 relative z-10 shadow-xl rounded-xl overflow-hidden transform hover:scale-105 transition duration-500">
+                    <img
+                      src="/images/drawing-tools.webp"
+                      alt="Drawing Tools"
+                      className="w-full h-full object-cover"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-transparent" />
+                    <div className="absolute bottom-3 left-3 text-white">
+                      <div className="flex items-center gap-2">
+                        <Users className="text-green-400" size={18} />
+                        <span className="font-semibold">Drawing Tools</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Middle right image */}
+                  <div className="col-span-2 row-span-1 relative z-10 shadow-xl rounded-xl overflow-hidden transform hover:scale-105 transition duration-500">
+                    <img
+                      src="/images/civil-lab.webp"
+                      alt="Civil Lab Equipment"
+                      className="w-full h-full object-cover"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-r from-transparent to-black/60" />
+                    <div className="absolute bottom-3 right-3 text-white">
+                      <div className="flex items-center gap-2">
+                        <span className="font-semibold">Lab Equipment</span>
+                        <Star className="text-yellow-400" size={18} />
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Bottom right image */}
+                  <div className="col-span-2 row-span-1 relative z-10 shadow-xl rounded-xl overflow-hidden transform hover:scale-105 transition duration-500">
+                    <img
+                      src="/images/Permeability-Apparatus.webp"
+                      alt="Soil Testing"
+                      className="w-full h-full object-cover"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
+                    <div className="absolute bottom-3 left-3 right-3 text-white text-center">
+                      <div className="flex items-center justify-center gap-2">
+                        <Award className="text-orange-400" size={18} />
+                        <span className="font-semibold">Soil Testing"</span>
+                      </div>
+                     
+                    </div>
+                  </div>
                 </div>
+
+                {/* Floating elements for visual enhancement */}
+                <div className="absolute -top-4 -right-4 w-20 h-20 bg-gradient-to-br from-sky-400/20 to-blue-500/20 rounded-full blur-xl"></div>
+                <div className="absolute -bottom-6 -left-6 w-24 h-24 bg-gradient-to-br from-purple-400/20 to-pink-500/20 rounded-full blur-xl"></div>
               </div>
             </div>
           </div>
