@@ -63,7 +63,7 @@ const TopCategory = () => {
 
         <div className="pt-10 text-center">
           <Link
-            to="/instruments-categories"
+            to="/instruments"
             className="inline-block bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-600 hover:to-blue-700 text-white font-semibold px-6 py-3 rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
           >
             View More <i className="ri-arrow-right-line ml-1" />

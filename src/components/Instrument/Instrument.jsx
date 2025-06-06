@@ -10,8 +10,10 @@ const imageMap = {
   auto_level_setl_at_24: "/images/Auto-Level-SETL-AT-24.webp",
   auto_level_topcon_at_b4: "/images/Auto-Level-Topcon-AT-B4.webp",
   dgps_geomax_zenith_series10_20: "/images/DGPS-geomax_zenith_series10_20.webp",
-  digital_theodolite_sokkia_dt_540: "/images/Digital-Theodolite-sokkia-DT-540.webp",
-  electronic_theodolite_setl_dt_02: "/images/Electronic-Theodolite-SETL-DT-02.webp",
+  digital_theodolite_sokkia_dt_540:
+    "/images/Digital-Theodolite-sokkia-DT-540.webp",
+  electronic_theodolite_setl_dt_02:
+    "/images/Electronic-Theodolite-SETL-DT-02.webp",
   fish_finder: "/images/fish-finder.webp",
   Auto_Level_Sokkia_B40: "/images/Auto-Level-Sokkia-B-40.webp",
   GeoMax_Digital_Level_ZDL700: "/images/GeoMax_Digital_Level_ZDL700.webp",
@@ -23,29 +25,76 @@ const imageMap = {
   mini_prism_set_with_pole: "/images/mini-prism-set-with-pole.webp",
   plane_table_set: "/images/plane-table-set.webp",
   prism_pole: "/images/prism-pole.webp",
-  South_DigitalLevel_DL_200_Series: "/images/South-DigitalLevel-DL-200-Series.webp",
+  South_DigitalLevel_DL_200_Series:
+    "/images/South-DigitalLevel-DL-200-Series.webp",
   South_Digital_Theodolite_ET_02: "/images/South-Digital-Theodolite-ET-02.webp",
-  South_Total_Station_Nts310_series: "/images/South-Total-Station-Nts310-series.webp",
-  TERRANO_ELECTRONIC_THEODOLITE_DE_2B: "/images/TERRANO_ELECTRONIC_THEODOLITE-DE-2B.webp",
-  Topcon_Optical_Plummet_Tribrach_01: "/images/Topcon_Optical_Plummet_Tribrach-01.webp",
-  Topcon_Total_Station_2_Topcon_GTS_102N_: "/images/Topcon-Total-Station-2-Topcon-GTS-102N-.webp",
-  Topcon_Total_Station_cygnus_ks102: "/images/Topcon-Total-Station-cygnus-ks102.webp",
+  South_Total_Station_Nts310_series:
+    "/images/South-Total-Station-Nts310-series.webp",
+  TERRANO_ELECTRONIC_THEODOLITE_DE_2B:
+    "/images/TERRANO_ELECTRONIC_THEODOLITE-DE-2B.webp",
+  Topcon_Optical_Plummet_Tribrach_01:
+    "/images/Topcon_Optical_Plummet_Tribrach-01.webp",
+  Topcon_Total_Station_2_Topcon_GTS_102N_:
+    "/images/Topcon-Total-Station-2-Topcon-GTS-102N-.webp",
+  Topcon_Total_Station_cygnus_ks102:
+    "/images/Topcon-Total-Station-cygnus-ks102.webp",
   Topcon_Total_Station_Es_101: "/images/Topcon-Total-Station-Es-101.webp",
-  Topcon_Total_station_gowin_kts_202: "/images/Topcon-Total-station-gowin-kts-202.webp",
-  Total_station_GeoMax_Zipp10_Pro: "/images/Total-station-GeoMax-Zipp10-Pro.webp",
+  Topcon_Total_station_gowin_kts_202:
+    "/images/Topcon-Total-station-gowin-kts-202.webp",
+  Total_station_GeoMax_Zipp10_Pro:
+    "/images/Total-station-GeoMax-Zipp10-Pro.webp",
+
+  clinometer_compass: "/images/Clinometer-compass.webp",
+  prismatic_compass: "/images/Prismatic-Compass.webp",
+  GPSMAP_65s: "/images/GPSMAP-65s.webp",
+  prism_with_holder: "/images/Prism-With-Holder.webp",
+  telescopic_alidade: "/images/Telescopic-Alidade.webp",
+  telescopic_alidade: "/images/Telescopic-Alidade.webp",
+
+  dumpy_level: "/images/Dumpy-Level.webp",
+  freemans_pro_l40: "/images/Freemans-PRO-L40.webp",
+  leica_gdf321: "/images/Leica-GDF321.webp",
+  lensatic_compass: "/images/lensatic-compass.webp",
+  leveling_staff: "/images/Leveling-Staff.webp",
+  meco_ldm100: "/images/Meco-LDM100.webp",
+  placom_kp90n: "/images/Placom-KP90N.webp",
+  prismatic_compass: "/images/Prismatic-Compass.webp",
+  sokkia_b40a: "/images/Sokkia-B40A.webp",
+  surveyors_chain: "/images/surveyor's-chain.webp",
 
   // Soil Testing Instruments
-  CBR_Test_Apparatus: "/images/CBR_Test_Apparatus.webp",
-  Core_Cutter_Apparatus: "/images/Core_Cutter_Apparatus.webp",
-  Dynamic_Cone_Penetration_Test_Apparatus: "/images/Dynamic_Cone_Penetration_Test_Apparatus.webp",
-  Liquid_Limit_Device: "/images/Liquid_Limit_Device.webp",
-  Permeability_Apparatus: "/images/Permeability_Apparatus.webp",
-  Plastic_Limit_Test_Set: "/images/Plastic_Limit_Test_Set.webp",
-  Rapid_Moisture_Meter: "/images/Rapid_Moisture_Meter.webp",
-  Shrinkage_Limit_Set: "/images/Shrinkage_Limit_Set.webp",
-  Unconfined_Compression_Testing_Machine: "/images/Unconfined_Compression_Testing_Machine.webp"
-};
+  CBR_Test_Apparatus: "/images/CBR-Test-Apparatus.webp",
+  Core_Cutter_Apparatus: "/images/Core-Cutter-Apparatus.webp",
+  Dynamic_Cone_Penetration_Test_Apparatus:
+    "/images/Dynamic-Cone-Penetration-Test-Apparatus.webp",
+  Liquid_Limit_Device: "/images/Liquid-Limit-Device.webp",
+  Permeability_Apparatus: "/images/Permeability-Apparatus.webp",
+  Plastic_Limit_Test_Set: "/images/Plastic-Limit-Test-Set.webp",
+  Rapid_Moisture_Meter: "/images/Rapid-Moisture-Meter.webp",
+  Shrinkage_Limit_Set: "/images/Shrinkage-Limit-Set.webp",
+  Unconfined_Compression_Testing_Machine:
+    "/images/Unconfined-Compression-Testing-Machine.webp",
 
+  // Civil lab
+  bitumen_mixer: "/images/Bitumen-Mixer.webp",
+  bitumen_testing_apparatus_set: "/images/Bitumen-Testing-Apparatus.webp",
+  cbr_testing_machine: "/images/CBR-Testing-Machine.webp",
+  compression_testing_machine: "/images/Compression-Testing-Machine.webp",
+  cube_mould: "/images/Cube-Mould.webp",
+  cube_mould_variants: "/images/Cube-Mould-Variants.webp",
+  disintegration_test_apparatus: "/images/Disintegration-Test-Apparatus.webp",
+  penetrometer: "/images/Penetrometer.webp",
+
+  // Drawing
+  Chart_Holder: "/images/Chart-Holder.webp",
+  Compass_Divider: "/images/Compass-Divider.webp",
+  Drawing_Board: "/images/Drawing-Board.webp",
+  Drawing_Board_with_Stand: "/images/Drawing-Board-With-Stand.webp",
+  Mini_Drafter: "/images/Mini-Drafter.webp",
+  Sundial_Compass: "/images/Sundial-Compass.webp",
+  Tracing_Table: "/images/Tracing-Table.webp",
+  T_Square_Scale: "/images/T-Square-Scale.webp",
+};
 
 const Instrument = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);

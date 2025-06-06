@@ -232,79 +232,323 @@ export const products = [
     description:
       "GeoMax Zipp10 Pro ek rugged aur reliable total station hai daily site work ke liye. Construction aur topographic surveys ke liye excellent choice hai.",
   },
-
-  // soild testing instruments
-  // Soil Testing Instruments
   {
     id: 30,
-    category: "Soil Testing",
-    title: "Auger Post Hole Digger",
-    image: "auger_post_hole_digger",
+    category: "Survey",
+    title: "Clinometer Compass",
+    image: "clinometer_compass",
     description:
-      "A manual auger used for boring holes in the ground. It is ideal for post hole digging and shallow soil sampling.",
+      "A versatile instrument combining the functions of a compass and a clinometer. It's used for determining both magnetic bearing (direction) and the angle of inclination (slope) of geological strata, landforms, or other surfaces. Essential for geological surveys, forestry, and civil engineering.",
   },
   {
     id: 31,
-    category: "Soil Testing",
-    title: "Core Cutter Apparatus",
-    image: "core_cutter_apparatus",
+    category: "Survey",
+    title: "Prismatic Compass",
+    image: "prismatic_compass",
     description:
-      "Used to determine the in-situ density of cohesive soils by extracting a cylindrical core sample from the ground.",
+      "A fundamental surveying instrument used for accurate measurement of magnetic bearings of survey lines. Featuring a prism for precise reading of graduations and often equipped with sights, it's ideal for traversing, mapping, and establishing control points.",
   },
   {
     id: 32,
-    category: "Soil Testing",
-    title: "Direct Shear Apparatus",
-    image: "direct_shear_apparatus",
+    category: "Survey",
+    title: "GPSMAP_65s",
+    image: "GPSMAP_65s",
     description:
-      "This apparatus is used to measure the shear strength of soil samples, essential for analyzing slope stability and foundation design.",
+      "A robust and portable Global Positioning System device designed for outdoor navigation and data collection. It provides accurate location coordinates, tracks routes, and displays topographic maps, making it invaluable for fieldwork, hiking, geocaching, and preliminary site reconnaissance.",
   },
   {
     id: 33,
-    category: "Soil Testing",
-    title: "Field CBR Test Apparatus",
-    image: "field_cbr_test_apparatus",
+    category: "Survey",
+    title: "Prism with Holder",
+    image: "prism_with_holder",
     description:
-      "Used to determine the California Bearing Ratio (CBR) of soil in the field, which helps in road and pavement design.",
+      "A crucial component in modern surveying, this optical device reflects electronic distance measurement (EDM) signals back to a total station or similar instrument. Mounted on a pole, it ensures highly accurate distance measurements over varying terrains, critical for boundary surveys, construction layout, and control surveys.",
   },
+
   {
     id: 34,
-    category: "Soil Testing",
-    title: "Field Density Apparatus",
-    image: "field_density_apparatus_sand_replacement",
+    category: "Survey",
+    title: "Telescopic Alidade",
+    image: "telescopic_alidade",
     description:
-      "Employed to measure the in-situ density of soil using the sand replacement method. Useful for compaction control.",
+      "An advanced sighting device used in conjunction with a plane table for detailed topographic mapping. Equipped with a telescope for magnified views and precise alignment, it allows surveyors to draw lines of sight directly onto the map sheet, measure vertical angles, and determine distances, facilitating accurate on-site plan preparation.",
   },
   {
     id: 35,
-    category: "Soil Testing",
-    title: "Liquid Limit Device",
-    image: "liquid_limit_device",
+    category: "Survey",
+    title: "Dumpy Level",
+    image: "dumpy_level",
     description:
-      "Used to determine the liquid limit of soil using the Casagrande method. Helps classify the soil’s consistency and behavior.",
+      "The dumpy level is an optical instrument used to determine height differences between various points. It helps establish horizontal lines with high precision and is widely used in land surveying and construction.",
   },
   {
     id: 36,
-    category: "Soil Testing",
-    title: "Proctor Compaction Apparatus",
-    image: "proctor_compaction_apparatus",
+    category: "Survey",
+    title: "Freemans PRO-L40 Measuring Tape",
+    image: "freemans_pro_l40",
     description:
-      "This apparatus is used to find the optimum moisture content and maximum dry density of soil for compaction purposes.",
+      "A long, durable measuring tape used for measuring straight-line distances in surveying and construction. Portable and reliable for quick field measurements.",
   },
   {
     id: 37,
-    category: "Soil Testing",
-    title: "Sieve Set",
-    image: "sieve_set",
+    category: "Survey",
+    title: "Leica GDF321 Tribrach",
+    image: "leica_gdf321",
     description:
-      "Used for particle size analysis of soil samples. Helps determine grain size distribution for soil classification.",
+      "A precision tribrach with three leveling screws used to mount and level instruments like theodolites and total stations. Ensures stable, accurate alignment during surveys.",
   },
   {
     id: 38,
+    category: "Survey",
+    title: "Lensatic Compass",
+    image: "lensatic_compass",
+    description:
+      "A rugged field compass with a magnifying lens and sighting wire. Ideal for navigation and orientation, allowing accurate direction measurements relative to magnetic north.",
+  },
+  {
+    id: 39,
+    category: "Survey",
+    title: "Leveling Staff",
+    image: "leveling_staff",
+    description:
+      "A graduated staff used with leveling instruments to measure height differences between ground points. Essential for elevation calculations in land surveying.",
+  },
+  {
+    id: 40,
+    category: "Survey",
+    title: "Meco LDM100 Laser Distance Meter",
+    image: "meco_ldm100",
+    description:
+      "An electronic device that measures distances quickly using laser technology. Accurate and efficient for indoor and outdoor construction or survey work.",
+  },
+  {
+    id: 41,
+    category: "Survey",
+    title: "Placom KP90N Digital Planimeter",
+    image: "placom_kp90n",
+    description:
+      "Used to calculate the area of irregular shapes on maps or plans. This digital device simplifies area computation by tracing the boundary line directly.",
+  },
+  {
+    id: 42,
+    category: "Survey",
+    title: "Prismatic Compass",
+    image: "prismatic_compass",
+    description:
+      "A precision compass with a prism to read bearings while sighting objects. Commonly used in compass surveying for accurate directional measurements.",
+  },
+  {
+    id: 43,
+    category: "Survey",
+    title: "Sokkia B40A Automatic Level",
+    image: "sokkia_b40a",
+    description:
+      "A durable auto level designed for accurate and stable leveling. Features an internal compensator and clear optics for professional surveying applications.",
+  },
+  {
+    id: 44,
+    category: "Survey",
+    title: "Surveyor’s Chain (Gunter’s Chain)",
+    image: "surveyors_chain",
+    description:
+      "A traditional steel chain used for measuring distances in land surveys. Still useful for educational purposes and basic fieldwork, especially in rural areas.",
+  },
+
+  // soild Testing
+  {
+    id: 45,
+    category: "Soil Testing",
+    title: "CBR Test Apparatus",
+    image: "CBR_Test_Apparatus",
+    description:
+      "Used to determine the California Bearing Ratio of soil for road and pavement design. It measures the strength of subgrade soil and base materials. Essential for highway and pavement construction planning.",
+  },
+  {
+    id: 46,
+    category: "Soil Testing",
+    title: "Core Cutter Apparatus",
+    image: "Core_Cutter_Apparatus",
+    description:
+      "Used to determine in-situ soil density directly from the field. A cylindrical cutter extracts a soil sample with minimal disturbance. Commonly used in embankment and earthwork projects.",
+  },
+  {
+    id: 47,
+    category: "Soil Testing",
+    title: "Dynamic Cone Penetration Test Apparatus",
+    image: "Dynamic_Cone_Penetration_Test_Apparatus",
+    description:
+      "Tests the strength and compaction of soil by cone penetration. Provides a quick and economical assessment of soil layers. Ideal for field investigation and foundation analysis.",
+  },
+  {
+    id: 48,
+    category: "Soil Testing",
+    title: "Liquid Limit Device",
+    image: "Liquid_Limit_Device",
+    description:
+      "Determines the moisture content at which soil changes from plastic to liquid. Used for classifying fine-grained soils in lab settings. Helps identify soil behavior under varying moisture conditions.",
+  },
+  {
+    id: 49,
+    category: "Soil Testing",
+    title: "Rapid Moisture Meter",
+    image: "Rapid_Moisture_Meter",
+    description:
+      "Measures moisture content of soil samples instantly on-site. Helps ensure proper compaction and moisture control in construction. Portable and easy to use in field conditions.",
+  },
+  {
+    id: 50,
     category: "Soil Testing",
     title: "Unconfined Compression Testing Machine",
-    image: "unconfined_compression_testing_machine",
+    image: "Unconfined_Compression_Testing_Machine",
     description:
-      "This machine is used to test the unconfined compressive strength of cohesive soil samples without lateral confinement.",
+      "Used to test the compressive strength of cohesive soil without lateral support. Helps assess the stability of soil under load. Suitable for soft clay and cohesive soil samples.",
+  },
+  {
+    id: 51,
+    category: "Soil Testing",
+    title: "Shrinkage Limit Set",
+    image: "Shrinkage_Limit_Set",
+    description:
+      "Determines the moisture content at which soil stops shrinking upon drying. Important for evaluating volume change behavior of clayey soils. Includes a shrinkage dish, glass plate, and mercury or substitute.",
+  },
+  {
+    id: 52,
+    category: "Soil Testing",
+    title: "Permeability Apparatus",
+    image: "Permeability_Apparatus",
+    description:
+      "Measures the rate at which water flows through soil. Used to determine the permeability coefficient of different soil types. Crucial for designing drainage and seepage control systems.",
+  },
+  {
+    id: 53,
+    category: "Soil Testing",
+    title: "Plastic Limit Test Set",
+    image: "Plastic_Limit_Test_Set",
+    description:
+      "Determines the plastic limit of soil, where it begins to behave plastically. Used in classifying and identifying soil consistency. Essential for geotechnical and civil engineering analysis.",
+  },
+
+  // Drawing
+
+  {
+    id: 55,
+    category: "Drawing",
+    title: "Compass & Divider Set",
+    image: "Compass_Divider",
+    description:
+      "Precision instruments used for measuring distances on maps, marking arcs, and transferring measurements. A compass holds a pencil while the divider has two metal legs.",
+  },
+  {
+    id: 56,
+    category: "Drawing",
+    title: "Drawing Board",
+    image: "Drawing_Board",
+    description:
+      "A flat wooden board used as a surface for drawing maps or plans. It provides a stable and smooth platform for working with paper.",
+  },
+  {
+    id: 57,
+    category: "Drawing",
+    title: "Drawing Board with Stand",
+    image: "Drawing_Board_with_Stand",
+    description:
+      "An adjustable board mounted on a stand used for drafting. It provides ergonomic benefits and adjustable angles to facilitate long hours of map-making or drawing.",
+  },
+  {
+    id: 58,
+    category: "Drawing",
+    title: "Mini Drafter",
+    image: "Mini_Drafter",
+    description:
+      "A combined instrument featuring a scale, protractor, and arms that help in drawing parallel lines, angles, and perpendiculars with ease.",
+  },
+  {
+    id: 59,
+    category: "Drawing",
+    title: "Sundial Compass",
+    image: "Sundial_Compass",
+    description:
+      "A historical navigation and time-telling instrument using the sun’s shadow. It includes a compass for orientation and a sundial to read time.",
+  },
+  {
+    id: 60,
+    category: "Drawing",
+    title: "Tracing Table",
+    image: "Tracing_Table",
+    description:
+      "A table with an illuminated surface used to trace existing drawings or maps. It is commonly used in map duplication and editing.",
+  },
+  {
+    id: 61,
+    category: "Drawing",
+    title: "T-Square Scale",
+    image: "T_Square_Scale",
+    description:
+      "A T-shaped ruler used on a drawing board to draw horizontal lines and as a guide for set squares to draw vertical or inclined lines.",
+  },
+  // Civil Lab Instruments
+  {
+    id: 62,
+    category: "Civil Lab",
+    title: "Bitumen Mixer",
+    image: "bitumen_mixer",
+    description:
+      "The Bitumen Mixer ensures uniform mixing of bitumen and aggregates in laboratory conditions. Designed for precise heating and consistent blending, it's essential for accurate bitumen testing and asphalt sample preparation.",
+  },
+  {
+    id: 63,
+    category: "Civil Lab",
+    title: "Bitumen Testing Apparatus Set",
+    image: "bitumen_testing_apparatus_set",
+    description:
+      "Complete set of instruments for testing the physical properties of bitumen, including penetration, ductility, and softening point. Ideal for quality control and R&D in road construction materials.",
+  },
+  {
+    id: 64,
+    category: "Civil Lab",
+    title: "CBR Testing Machine",
+    image: "cbr_testing_machine",
+    description:
+      "This machine determines the California Bearing Ratio of subgrade soil and base materials. Crucial for evaluating load-bearing capacity in pavement and road design applications.",
+  },
+  {
+    id: 65,
+    category: "Civil Lab",
+    title: "Compression Testing Machine",
+    image: "compression_testing_machine",
+    description:
+      "Used to test the compressive strength of concrete and other construction materials. Offers accurate load measurement and is vital for quality control in structural engineering.",
+  },
+  {
+    id: 66,
+    category: "Civil Lab",
+    title: "Cube Mould",
+    image: "cube_mould",
+    description:
+      "Standard cube moulds for casting concrete specimens for compressive strength tests. Made from durable metal, available in various sizes to meet IS and ASTM standards.",
+  },
+  {
+    id: 67,
+    category: "Civil Lab",
+    title: "Cube Mould Variants",
+    image: "cube_mould_variants",
+    description:
+      "Various types of concrete moulds, including different sizes and materials, used for preparing test specimens for strength evaluation. Suitable for labs and field testing.",
+  },
+  {
+    id: 68,
+    category: "Civil Lab",
+    title: "Disintegration Test Apparatus",
+    image: "disintegration_test_apparatus",
+    description:
+      "Used in pharmaceutical labs to test how quickly tablets and capsules disintegrate under specified conditions. Ensures compliance with pharmacopeial standards.",
+  },
+  {
+    id: 69,
+    category: "Civil Lab",
+    title: "Penetrometer",
+    image: "penetrometer",
+    description:
+      "Instrument used to measure the penetration resistance of materials such as bitumen, soil, and tablets. Critical for determining consistency, hardness, and strength properties.",
   },
 ];
