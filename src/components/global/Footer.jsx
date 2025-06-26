@@ -1,11 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-// Mock Link component for demo purposes
-const Link = ({ to, children, className, ...props }) => (
-  <a href={to} className={className} {...props}>
-    {children}
-  </a>
-);
+
 
 const Footer = () => {
   return (
@@ -41,7 +37,7 @@ const Footer = () => {
               <p className="text-sm text-gray-400 mb-3">Follow Us</p>
               <div className="flex gap-3">
                 <Link
-                  href="https://www.facebook.com/share/1H1pJDVFag/"
+                  to="https://www.facebook.com/share/1H1pJDVFag/"
                   target="_blank"
                   className="group flex items-center justify-center w-10 h-10 bg-gray-700 hover:bg-blue-600 rounded-lg transition-all duration-300 hover:scale-110"
                   aria-label="Follow us on Facebook"
@@ -49,7 +45,7 @@ const Footer = () => {
                   <i className="ri-facebook-fill"></i>
                 </Link>
                 <Link
-                  href="https://www.instagram.com/tajenterprises01?igsh=eGZkeDEwMjloazJ1"
+                  to="https://www.instagram.com/tajenterprises01?igsh=eGZkeDEwMjloazJ1"
                   target="_blank"
                   className="group flex items-center justify-center w-10 h-10 bg-gray-700 hover:bg-gradient-to-br hover:from-purple-500 hover:to-pink-500 rounded-lg transition-all duration-300 hover:scale-110"
                   aria-label="Follow us on Instagram"
@@ -132,18 +128,18 @@ const Footer = () => {
                   <div>
                     <p className="font-medium text-white mb-2">Email Us</p>
                     <div className="space-y-1">
-                      <a
-                        href="mailto:tajenterprises0101@gmail.com"
+                      <Link
+                        to="mailto:tajenterprises0101@gmail.com"
                         className="block text-gray-300 hover:text-sky-400 transition-colors duration-200"
                       >
                         tajenterprises0101@gmail.com
-                      </a>
-                      <a
-                        href="mailto:info@tajinstruments.com"
+                      </Link>
+                      <Link
+                        to="mailto:info@tajinstruments.com"
                         className="block text-gray-300 hover:text-sky-400 transition-colors duration-200"
                       >
                         info@tajinstruments.com
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -165,13 +161,13 @@ const Footer = () => {
                     <p className="font-medium text-white mb-2">Call Us</p>
                     <div className="space-y-1">
                       <Link
-                        href="tel:+919897748786"
+                        to="tel:+919897748786"
                         className="block text-gray-300 hover:text-sky-400 transition-colors duration-200"
                       >
                         +91 98977 48786
                       </Link>
                       <Link
-                        href="tel:+919410907725"
+                        to="tel:+919410907725"
                         className="block text-gray-300 hover:text-sky-400 transition-colors duration-200"
                       >
                         +91 94109 07725

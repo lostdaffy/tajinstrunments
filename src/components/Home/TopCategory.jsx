@@ -25,14 +25,18 @@ const TopCategory = () => {
     <div className="w-full py-12 px-4 md:px-10 lg:px-20">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-10">
-          <h2 className="text-3xl md:text-4xl font-bold pb-2">Explore Categories</h2>
-          <span className="text-gray-600">Lorem ipsum dolor sit ipsum dolor sit</span>
+          <h2 className="text-3xl md:text-4xl font-bold pb-2">
+            Explore Categories
+          </h2>
+          <span className="text-gray-600">
+            We specialize in high-quality survey instruments.
+          </span>
         </div>
 
         {/* Grid Layout */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {categories.map((item, index) => (
-            <Link to="/products" key={index}>
+            <Link to="/instruments" key={index}>
               <div className="relative bg-white rounded-2xl shadow-lg overflow-hidden transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl group">
                 <div className="absolute top-4 right-4 bg-gradient-to-r from-sky-500 to-blue-600 text-white text-xs font-semibold tracking-wider uppercase px-3 py-1 rounded-full shadow-md z-10">
                   Premium

@@ -10,6 +10,7 @@ import {
 } from "lucide-react";
 import Navbar from "../components/global/Navbar";
 import Footer from "../components/global/Footer";
+import { Link } from "react-router-dom";
 
 const AboutUs = () => {
   return (
@@ -357,12 +358,12 @@ const AboutUs = () => {
                   the difference that quality and dedication make.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-6 justify-center">
-                  <button className="group relative bg-sky-400 text-white font-bold px-10 py-5 rounded-2xl hover:bg-sky-500 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                  <Link to="/contact" className="group relative bg-sky-400 text-white font-bold px-10 py-5 rounded-2xl hover:bg-sky-500 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
                     <span className="relative z-10">Contact Us Today</span>
-                  </button>
-                  <button className="group relative border-2 border-sky-400 text-sky-400 font-bold px-10 py-5 rounded-2xl hover:bg-sky-400 hover:text-white transition-all duration-300 transform hover:-translate-y-1">
+                  </Link>
+                  <Link to="/instruments" className="group relative border-2 border-sky-400 text-sky-400 font-bold px-10 py-5 rounded-2xl hover:bg-sky-400 hover:text-white transition-all duration-300 transform hover:-translate-y-1">
                     <span className="relative z-10">View Our Products</span>
-                  </button>
+                  </Link>
                 </div>
               </div>
             </div>

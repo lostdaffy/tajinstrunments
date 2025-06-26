@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 import {
   ChevronRight,
   Phone,
@@ -55,18 +57,24 @@ const Hero = () => {
 
             {/* Buttons */}
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
-              <button className="group bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-600 hover:to-blue-700 text-white font-semibold px-6 sm:px-8 py-3 sm:py-4 rounded-xl transition-all duration-300 flex items-center justify-center gap-2 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+              <Link
+                to="/contact"
+                className="group bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-600 hover:to-blue-700 text-white font-semibold px-6 sm:px-8 py-3 sm:py-4 rounded-xl transition-all duration-300 flex items-center justify-center gap-2 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+              >
                 <Phone size={18} className="sm:w-5 sm:h-5" />
                 Contact Us
                 <ChevronRight
                   size={14}
                   className="sm:w-4 sm:h-4 group-hover:translate-x-1 transition-transform"
                 />
-              </button>
-              <button className="group bg-white/10 backdrop-blur-sm text-white font-semibold px-6 sm:px-8 py-3 sm:py-4 rounded-xl border border-white/20 hover:bg-white/20 transition-all duration-300 flex items-center justify-center gap-2">
+              </Link>
+              <Link
+                to="/instruments"
+                className="group bg-white/10 backdrop-blur-sm text-white font-semibold px-6 sm:px-8 py-3 sm:py-4 rounded-xl border border-white/20 hover:bg-white/20 transition-all duration-300 flex items-center justify-center gap-2"
+              >
                 <BookOpen size={18} className="sm:w-5 sm:h-5" />
                 View Categories
-              </button>
+              </Link>
             </div>
           </div>
 
@@ -290,7 +298,6 @@ const Hero = () => {
                         <Award className="text-orange-400" size={18} />
                         <span className="font-semibold">Soil Testing"</span>
                       </div>
-                     
                     </div>
                   </div>
                 </div>
